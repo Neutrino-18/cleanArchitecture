@@ -1,3 +1,4 @@
+import 'package:final_clean/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: "Test App",
       //theme: ,
       //darkTheme: ,
-      //routerConfig: ,
+      routerConfig: Routes.router,
     );
   }
 }
