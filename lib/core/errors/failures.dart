@@ -1,21 +1,21 @@
-abstract class Failures {
+abstract class Failure {
   final String errorMessage;
 
-  const Failures({required this.errorMessage});
+  const Failure({required this.errorMessage});
 }
 
-class ServerFailure extends Failures {
+class ServerFailure extends Failure {
   const ServerFailure({required super.errorMessage});
 }
 
-class CacheFailure extends Failures {
+class CacheFailure extends Failure {
   const CacheFailure({required super.errorMessage});
 }
 
-class NetworkFailure extends Failures {
+class NetworkFailure extends Failure {
   const NetworkFailure({required super.errorMessage});
 }
 
-class HiveFailure extends Failures {
+class HiveFailure extends Failure {
   const HiveFailure({required super.errorMessage});
 }
