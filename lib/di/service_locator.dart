@@ -1,6 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:final_clean/core/connection/network_info.dart';
 import 'package:final_clean/core/network/client/dio_client.dart';
+import 'package:final_clean/features/news/data/datasources/remote_source/news_remote_source.dart';
+import 'package:final_clean/features/news/data/repositories/news_repo_imp.dart';
 import 'package:final_clean/features/news/domain/repositories/news_repo.dart';
 import 'package:final_clean/features/news/domain/usecases/get_news_case.dart';
 import 'package:get_it/get_it.dart';
@@ -23,7 +25,16 @@ Future<void> setupLocator() async {
 
   /* NEWS */
 
+  // UseCase
   getIt.registerLazySingleton<GetNews>(() => GetNews());
 
-  //getIt.registerLazySingleton<NewsRepository>(()=> );
+  //DataSources
+  getIt.registerLazySingleton<NewsRemoteSource>(() => NewsRemoteSourceImp());
+
+  getIt.registerLazySingleton<NewsRepository>(
+    () => NewsRepositoryImp(
+      newsRemoteSource: getIt<NewsRemoteSource>(),
+      networkInfo: getIt<NetworkInfo>(),
+    ),
+  );
 }

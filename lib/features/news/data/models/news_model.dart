@@ -7,7 +7,7 @@ class NewsModel extends NewsEntity {
     required super.article,
   });
 
-  factory NewsModel.json(Map<String, dynamic> json) {
+  factory NewsModel.fromJson(Map<String, dynamic> json) {
     return NewsModel(
       status: json['status'],
       totalResults: json['totalResults'],

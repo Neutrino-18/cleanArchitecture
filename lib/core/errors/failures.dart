@@ -19,3 +19,7 @@ class NetworkFailure extends Failure {
 class HiveFailure extends Failure {
   const HiveFailure({required super.errorMessage});
 }
+
+class DataTransmissionFailure extends Failure {
+  const DataTransmissionFailure({required super.errorMessage});
+}
