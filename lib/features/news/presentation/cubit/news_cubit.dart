@@ -17,8 +17,8 @@ class NewsCubit extends Cubit<BaseState> {
     final result = await newsUseCase.getNews();
 
     result.fold(
-      (failure) => emit(StateError(failure.errorMessage)),
-      (news) => emit(StateOnSuccess<NewsEntity>(news)),
+      (failure) => emit(NewsError(failure.errorMessage)),
+      (news) => emit(NewsSuccess(news)),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-class BaseState extends Equatable {
+abstract class BaseState extends Equatable {
   @override
   List<Object?> get props => [];
 }
@@ -42,5 +42,5 @@ class StateOnSuccess<T> extends BaseState {
   final T response;
   StateOnSuccess(this.response);
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [response];
 }
