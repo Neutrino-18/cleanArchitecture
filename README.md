@@ -1,4 +1,4 @@
-# Hi👋🏻, I'm Raghav Dave
+<h1 align="center">Hi👋🏻, I'm Raghav Dave </h1> 
 
 A new Flutter project.
 
