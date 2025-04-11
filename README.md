@@ -1,11 +1,11 @@
-<h1 align="center">👋 Hey there, I'm <span style="color:#00ADB5;">Raghav Dave</span></h1>
+<h1 align="center">Hey 👋, I'm <strong>Raghav Dave</strong></h1>
 
 <h3 align="center">
 🚀 Flutter Developer &nbsp;&nbsp;|&nbsp;&nbsp; ⚙️ Go Backend Engineer &nbsp;&nbsp;|&nbsp;&nbsp; 🎯 Real-Time Systems Enthusiast
 </h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00ADB5&center=true&vCenter=true&multiline=true&width=700&lines=Welcome+to+my+GitHub+Profile!;I+love+building+high-performance+apps.;Let's+build+something+awesome+together!✨" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&center=true&vCenter=true&width=800&lines=Welcome+to+my+GitHub+profile!;I+build+real-time+mobile+%26+backend+apps.;Let’s+create+something+awesome+🚀" alt="Typing SVG" />
 </p>
 
 
